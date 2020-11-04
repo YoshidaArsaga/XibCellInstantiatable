@@ -10,6 +10,7 @@
 		3B8379392552953900465603 /* XibCellInstantiatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B83792F2552953800465603 /* XibCellInstantiatable.framework */; };
 		3B83793E2552953900465603 /* XibCellInstantiatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83793D2552953900465603 /* XibCellInstantiatableTests.swift */; };
 		3B8379402552953900465603 /* XibCellInstantiatable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8379322552953900465603 /* XibCellInstantiatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B83794C2552961900465603 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83794B2552961900465603 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3B8379382552953900465603 /* XibCellInstantiatableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XibCellInstantiatableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B83793D2552953900465603 /* XibCellInstantiatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCellInstantiatableTests.swift; sourceTree = "<group>"; };
 		3B83793F2552953900465603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B83794B2552961900465603 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8379322552953900465603 /* XibCellInstantiatable.h */,
+				3B83794B2552961900465603 /* UITableView+Extension.swift */,
 				3B8379332552953900465603 /* Info.plist */,
 			);
 			path = XibCellInstantiatable;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					3B83792E2552953800465603 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					3B8379372552953900465603 = {
 						CreatedOnToolsVersion = 12.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B83794C2552961900465603 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		3B8379442552953900465603 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQNJ5RALRG;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.arsaga.XibCellInstantiatable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		3B8379452552953900465603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQNJ5RALRG;
@@ -389,6 +397,7 @@
 		3B8379472552953900465603 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQNJ5RALRG;
 				INFOPLIST_FILE = XibCellInstantiatableTests/Info.plist;
@@ -407,6 +416,7 @@
 		3B8379482552953900465603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQNJ5RALRG;
 				INFOPLIST_FILE = XibCellInstantiatableTests/Info.plist;
